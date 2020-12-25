@@ -239,7 +239,7 @@ export const contactreducer = (state = initialstate, action) => {
 
       let arr = state
         .contacts
-        .filter(contact => contact.id == action.payload);
+        .filter(contact => contact.id === action.payload);
       arr = arr.values();
       for (let val of arr) {
         arr = val;
@@ -255,7 +255,7 @@ export const contactreducer = (state = initialstate, action) => {
         ...state,
         contacts: state
           .contacts
-          .map(contact => contact.id == action.payload.id
+          .map(contact => contact.id === action.payload.id
             ? action.payload
             : contact)
       };
@@ -264,7 +264,7 @@ export const contactreducer = (state = initialstate, action) => {
         ...state,
         contacts: state
           .contacts
-          .filter(contact => contact.id != action.payload)
+          .filter(contact => contact.id !== action.payload)
       };
 
     default:

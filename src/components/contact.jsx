@@ -1,17 +1,14 @@
 import React from 'react'
-import Avatar from 'react-avatar'
 import { useDispatch } from 'react-redux'
+import Avatar from 'react-avatar'
 
 import { Link } from 'react-router-dom'
 import { deletecontact } from '../redux/ACTIONS/contactaction'
 
-const contact = ({contact}) => {
-
-const dispatch = useDispatch();
-
+const Contact = ({contact}) => {
   
-
-    return (
+  const dispatch = useDispatch();
+   return (
          <tr>
               <th scope="row">
                 <div className="form-group form-check">
@@ -36,4 +33,4 @@ const dispatch = useDispatch();
     )
 }
 
-export default contact
+export default Contact
