@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# GO TO PROJECT PREVIEW
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project LINK IS [click_ heroku loginHERE](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
